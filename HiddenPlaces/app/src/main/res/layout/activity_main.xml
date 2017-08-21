@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/naksan"
+    tools:context="com.naver.blog.hiddenplaces.MainActivity">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hidden Tourist Attractions"
+        android:textStyle="bold"
+        android:backgroundTint="#FF0000"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btn_location"
+        android:layout_width="146dp"
+        android:layout_height="132dp"
+        android:background="@drawable/location_btn"
+        android:layout_marginRight="10dp"
+         />
+
+    <Button
+        android:id="@+id/btn_region"
+        android:layout_width="146dp"
+        android:layout_height="132dp"
+        android:background="@drawable/region_btn"
+        android:layout_marginLeft="10dp"
+         />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
